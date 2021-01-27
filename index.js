@@ -203,7 +203,7 @@ class Select2 extends Component {
                                 onPress={() => {
                                     let selectedIds = [], selectedObjectItems = [];
                                     selectedItem.map(item => {
-                                        selectedIds.push(item.id);
+                                        selectedIds.push(item);
                                         selectedObjectItems.push(item);
                                     })
                                     onSelect && onSelect(selectedIds, selectedObjectItems);
@@ -237,7 +237,7 @@ class Select2 extends Component {
                                                             }
                                                             if (item.checked) {
                                                                 preSelectedItem.push(item);
-                                                                selectedIds.push(item.id);
+                                                                selectedIds.push(item);
                                                                 selectedObjectItems.push(item);
                                                             };
                                                         })
