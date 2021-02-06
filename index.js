@@ -299,7 +299,7 @@ const styles = StyleSheet.create({
         paddingVertical: 12, flexDirection: 'row', alignItems: 'center'
     },
     itemText: {
-        fontSize: 16, color: '#333', flex: 1
+        fontSize: 16, color: 'white', flex: 1
     },
     itemIcon: {
         width: 30, textAlign: 'right'
