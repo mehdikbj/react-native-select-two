@@ -162,6 +162,7 @@ class Select2 extends Component {
                                     returnKeyType='done'
                                     style={[styles.inputKeyword, this.defaultFont]}
                                     placeholder={searchPlaceHolderText}
+                                    placeholderTextColor={'rgb(71, 69, 74)'}
                                     selectionColor={colorTheme}
                                     onChangeText={keyword => this.setState({ keyword })}
                                     onFocus={() => {
@@ -220,7 +221,7 @@ class Select2 extends Component {
                     preSelectedItem.length > 0
                         ? (
                             isSelectSingle
-                                ? <Text style={[styles.selectedTitlte, this.defaultFont, selectedTitleStyle, { color: '#333' }]}>{preSelectedItem[0].name}</Text>
+                                ? <Text style={[styles.selectedTitlte, this.defaultFont, selectedTitleStyle, { color: 'white' }]}>{preSelectedItem[0].name}</Text>
                                 : <View style={styles.tagWrapper}>
                                     {
                                         preSelectedItem.map((tag, index) => {
@@ -274,7 +275,7 @@ const styles = StyleSheet.create({
         height: 1, width: '100%', backgroundColor: '#cacaca'
     },
     inputKeyword: {
-        height: 40, borderRadius: 5, borderWidth: 1, borderColor: '#cacaca',
+        height: 40, borderRadius: 5, borderWidth: 1, borderColor: '#cacaca', color: 'white',
         paddingLeft: 8, marginHorizontal: 24, marginTop: 16
     },
     buttonWrapper: {
